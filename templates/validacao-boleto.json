@@ -1,0 +1,35 @@
+{
+  "id": "validacao-boleto",
+  "nome": "Validação de credencial de boleto",
+  "campos": [
+    "responsavel", "chamado", "empresa",
+    "cnpj", "credencial", "banco", "agencia", "conta_corrente", "email",
+    "produtos", "sites_redes", "qtd_mensal", "ticket_medio"
+  ],
+  "automaticos": ["saudacao"],
+  "assunto": "(Responsavel) - VALIDAR CREDENCIAL BOLETO - N° Chamado - Empresa",
+  "descricao": [
+    "{{saudacao}}, tudo bem?",
+    "",
+    "Por gentileza, validar a credencial de boletos conforme os seguintes dados:",
+    "",
+    "**CNPJ: **",
+    "**Credencial: **",
+    "",
+    "- Banco: ",
+    "- Agência: ",
+    "- CC: ",
+    "",
+    "**E-mail (para receber relatórios do PJBank): **",
+    "",
+    "1.Sobre quais produtos e/ou serviços serão efetuadas as cobranças através de seu cadastro no PJBank?",
+    "",
+    "2.A empresa possui algum site e/ou páginas em redes sociais (Site, Instagram, Facebook etc)?",
+    "",
+    "3.Qual será a estimativa de transações mensais?",
+    "",
+    "4.Qual o ticket médio das cobranças que serão realizadas?",
+    "",
+    "R$ "
+  ]
+}

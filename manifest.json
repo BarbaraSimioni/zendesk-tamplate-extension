@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Modelos de Solicitação PJBank",
+  "version": "0.1.0",
+  "description": "Preenche assunto e descrição das solicitações do suporte PJBank a partir de modelos.",
+  "content_scripts": [
+    {
+      "matches": ["https://pjbank.zendesk.com/hc/pt-br/requests/new*"],
+      "js": [
+        "src/config/selectors.js",
+        "src/core/template.js",
+        "src/content/content.js"
+      ],
+      "css": ["src/content/estilos.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["templates/*.json"],
+      "matches": ["https://pjbank.zendesk.com/*"]
+    }
+  ]
+}
