@@ -1,0 +1,13 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Dependências (quando entrarmos na Fase 3)
+node_modules/
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
